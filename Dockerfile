@@ -3,7 +3,12 @@ FROM alpine:3.6
 
 MAINTAINER Andrius Kairiukstis <andrius@kairiukstis.com>
 
-RUN apk add --update asterisk asterisk-speex asterisk-sample-config \
+RUN apk add --update \
+      asterisk \
+      asterisk-speex \
+      asterisk-sample-config \
+      asterisk-curl \
+      asterisk-srtp \
 &&  rm -rf /usr/lib/asterisk/modules/*pjsip* \
 &&  rm -rf /var/cache/apk/* /tmp/* /var/tmp/*
 
