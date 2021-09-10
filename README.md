@@ -21,6 +21,6 @@ Only base Asterisk packages installed. If you want to add sounds, it's recommend
 
 ## Build
 ```bash
-docker build -t engel-b/alpine-asterisk:<version> .
+docker build -t engelb/alpine-asterisk:<version> .
 ```
 
