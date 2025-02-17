@@ -1,8 +1,6 @@
 # vim:set ft=dockerfile:
 FROM gliderlabs/alpine:edge
 
-MAINTAINER Björn Engel<justcoke@gmail.com>
-
 RUN apk add --update less curl sngrep ngrep \
       asterisk asterisk-curl asterisk-speex \
 &&  rm -rf /usr/lib/asterisk/modules/*pjsip* \

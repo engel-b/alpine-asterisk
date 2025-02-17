@@ -24,3 +24,15 @@ Only base Asterisk packages installed. If you want to add sounds, it's recommend
 docker build -t engelb/alpine-asterisk:<version> .
 ```
 
+# Minimal configuration
+
+A set of a working set of configuration files was put in required_minimal_config. But some adaption are needed to use them
+
+* extensions.conf
+  * <openhab-host-or-ip> address of openhab host
+  * <switch-item> name of switch item in openHAB
+* sip.conf
+  * <voip-username> configured sip username
+  * <voip-password> configured sip password
+  * <fritzbox-host-or-ip> address of fritzbox (eg. fritz.box or 192.168.178.1)
+  * <fritzbox-internal-nr> fritzbox internal number
